@@ -1,6 +1,6 @@
 const data = [
     {
-        "step": "Call NetJets and cancel subscription.",
+        "step": "Call NetJets and renew subscription.",
         "order": "1001",
         "url": "http://www.google.com",
         "assigned": "RFA",
@@ -8,7 +8,7 @@ const data = [
         "isComplete": "false",
     },
     {
-        "step": "Second",
+        "step": "Sell LEAPS against the Market",
         "order": "1002",
         "url": "http://www.google.com",
         "assigned": "RFA",
@@ -16,7 +16,7 @@ const data = [
         "isComplete": "false",
     },
     {
-        "step": "Third",
+        "step": "Create Project Plan for next billion $ idea.",
         "order": "1003",
         "url": "http://www.google.com",
         "assigned": "RFA",
@@ -24,7 +24,7 @@ const data = [
         "isComplete": "false",
     },
     {
-        "step": "Fourth",
+        "step": "Get reservation at The Four Seasons Maui Resort for 2 weeks.",
         "order": "1004",
         "url": "http://www.google.com",
         "assigned": "RFA",
@@ -32,7 +32,7 @@ const data = [
         "isComplete": "false",
     },
     {
-        "step": "Fifth",
+        "step": "Schedule Travel Maui",
         "order": "1005",
         "url": "http://www.google.com",
         "assigned": "RFA",
@@ -40,7 +40,7 @@ const data = [
         "isComplete": "false",
     },
     {
-        "step": "Sixth",
+        "step": "Get test drive/ride for 2021 Audi S8",
         "order": "1006",
         "url": "http://www.google.com",
         "assigned": "RFA",

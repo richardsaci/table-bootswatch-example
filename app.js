@@ -21,7 +21,7 @@ const taskList = data.map(function(item){
         "order": item.order,
         "url": item.url,
         "assigned": item.assigned,
-        "note": item.note.length ? "Yes" : "No",
+        "note": item.note,
         "Complete": item.complete ? "Yes" : "No"
     };
     return obj;
@@ -73,4 +73,37 @@ taskList.sort((a, b) => (a.order > b.order) ? 1 : -1);
 // console.table(teamNameLength);
 
 // console.log(`This is the filtered (isComplete=false) list: ${taskList}`);
+
+
+// STEP 7
+let table = document.getElementById('namesTable'),
+    tbody = document.getElementById('tbody'),
+    order, step, url, assigned, note, isComplete;
+for (i = 0; i < taskList.length; i++) {
+    order = taskList[i].order;
+    step = taskList[i].step;
+    url = taskList[i].url;
+    assigned = taskList[i].assigned;
+    status = taskList[i].status ? "Yes" : "No";
+    note = taskList[i].note;
+    //
+    tbody.insertRow(i);
+    tbody.rows[i].insertCell(0);
+    tbody.rows[i].insertCell(1);
+    tbody.rows[i].insertCell(2);
+    tbody.rows[i].insertCell(3);
+    tbody.rows[i].insertCell(4);
+    tbody.rows[i].insertCell(5);
+    tbody.rows[i].insertCell(6);
+    tbody.rows[i].cells[0].innerHTML = order;
+    tbody.rows[i].cells[1].innerHTML = step;
+    tbody.rows[i].cells[2].innerHTML = assigned;
+    tbody.rows[i].cells[3].innerHTML = status;
+    tbody.rows[i].cells[4].innerHTML = `<a href="${url}">Link</a>`;
+    tbody.rows[i].cells[5].innerHTML = note;
+}
+
+table.classList.add("table");
+table.classList.add("table-hover");
+
 
